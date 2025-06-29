@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>newClothesType</class>
+ <widget class="QDialog" name="newClothesType">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>469</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="next">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>400</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>完成</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>361</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{border-style:solid;border-width:2px;background-color:rgb(255, 201, 7);border-radius:10px;}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 170, 0);
+font: 16pt &quot;黑体&quot;;
+background-color: rgb(255, 245, 206);</string>
+    </property>
+    <property name="text">
+     <string>定制服装档案</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>341</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 245, 206);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>281</width>
+       <height>213</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 245, 206);
+font: 12pt &quot;新宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>厚度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="material"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="type">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 245, 206);
+font: 12pt &quot;新宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>图案</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 245, 206);
+font: 12pt &quot;新宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>类型</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="season"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="style"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="pattern"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 245, 206);
+font: 12pt &quot;新宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>材质</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="thickness"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 245, 206);
+font: 12pt &quot;新宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>风格</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(254, 244, 205);
+font: 12pt &quot;新宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>季节</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <zorder>frame_4</zorder>
+   <zorder>label_3</zorder>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>next</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>signup.jpg</file>
+        <file>mainwindow.jpg</file>
+        <file>login.jpg</file>
+        <file>closet.jpg</file>
+        <file>mirror.jpeg</file>
+        <file>user.jpeg</file>
+        <file>icon.png</file>
+        <file>icon1.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>calendar1.png</file>
+        <file>doraemon.png</file>
+    </qresource>
+</RCC>
