@@ -166,11 +166,18 @@ bool Cloth::deleteCloth(int userId, const Cloth& targetCloth)
     settings.endArray();
 
     //重新写入
+    settings.remove("clothes");
+
     settings.beginWriteArray("clothes");
     for (int i = 0; i < remainingClothes.size(); ++i) {
         settings.setArrayIndex(i);
         remainingClothes[i].saveToSettings(settings, i);
     }
+    settings.endArray();
+
+    //调整新数组大小
+    settings.beginReadArray("clothes");
+    settings.setValue("size",size-1);
     settings.endArray();
 
     settings.endGroup();
